@@ -1,9 +1,6 @@
 package algorithms.implementation
 
-/**
-  * Created by bruno on 3/22/16.
-  */
-object SherlockAndSquaresMelhorado {
+object SherlockAndSquaresBetter {
 
     def main(args: Array[String]) {
         val t = readLine.toInt;

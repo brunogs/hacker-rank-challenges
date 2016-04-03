@@ -25,9 +25,7 @@ object SherlockAndSquares {
     }
 
     /*
-    Solucao mais inteligente:
-    Escrita em python
-
+    Better solution in python:
     import math
 
     T = int( input() )

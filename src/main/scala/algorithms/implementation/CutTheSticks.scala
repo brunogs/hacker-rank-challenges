@@ -16,20 +16,12 @@ object CutTheSticks {
     def cutSticks(sticks: Seq[Int]) : Seq[Int] = {
         if (sticks.exists( _ > 0 )) {
             val minStick = sticks.min
-            val countSticksToCut = sticks count { _ >= minStick }
+            val countSticksToCut = sticks.count( _ >= minStick )
             println(countSticksToCut)
-            val resultSticks = sticks map { _ - minStick } filter { _ > 0 }
+            val resultSticks = sticks.map( _ - minStick).filter( _ > 0)
             cutSticks(resultSticks)
         }
         sticks
     }
-
-    /*def cutSticksWhile(cutOperation: => Seq[Int]) (actualSticks: => Seq[Int]) : Unit = {
-        if (actualSticks exists { _ > 0 }) {
-            val resultSticks = cutOperation
-            //TODO Como fazer isso ?
-            cutSticksWhile (cutOperation(resultSticks)) (resultSticks)
-        }
-    }*/
 
 }
