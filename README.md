@@ -1,2 +1,2 @@
 # hacker-rank-challenges
-My solutions for hackerhank.com challenges
+Used to keep my solutions for hackerhank.com challenges using language scala
